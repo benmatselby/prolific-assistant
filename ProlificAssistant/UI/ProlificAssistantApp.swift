@@ -11,8 +11,7 @@ import SwiftUI
 struct ProlificAssistantApp: App {
     var body: some Scene {
         MenuBarExtra("Prolific", image: "Logo") {
-            let v = "1"
-            Button("Active studies" + v) {
+            Button("Active studies") {
             }
             Button("Draft studies") {
             }
