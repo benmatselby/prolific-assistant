@@ -7,15 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B510A34B2950C788002144E6 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = B510A34A2950C788002144E6 /* Client.swift */; };
 		B563F270292EB27000038E0C /* ProlificAssistantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563F26F292EB27000038E0C /* ProlificAssistantApp.swift */; };
-		B563F272292EB27100038E0C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563F271292EB27100038E0C /* ContentView.swift */; };
 		B563F274292EB27100038E0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B563F273292EB27100038E0C /* Assets.xcassets */; };
 		B563F278292EB27100038E0C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B563F277292EB27100038E0C /* Preview Assets.xcassets */; };
 		B563F282292EB27100038E0C /* ProlificAssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563F281292EB27100038E0C /* ProlificAssistantTests.swift */; };
 		B563F28C292EB27100038E0C /* ProlificAssistantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563F28B292EB27100038E0C /* ProlificAssistantUITests.swift */; };
 		B563F28E292EB27100038E0C /* ProlificAssistantUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563F28D292EB27100038E0C /* ProlificAssistantUITestsLaunchTests.swift */; };
-		B563F29C292EB2AE00038E0C /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = B563F29A292EB2AE00038E0C /* Makefile */; };
-		B563F29D292EB2AE00038E0C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B563F29B292EB2AE00038E0C /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,9 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B510A34A2950C788002144E6 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		B563F26C292EB27000038E0C /* ProlificAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProlificAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B563F26F292EB27000038E0C /* ProlificAssistantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProlificAssistantApp.swift; sourceTree = "<group>"; };
-		B563F271292EB27100038E0C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B563F273292EB27100038E0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B563F275292EB27100038E0C /* ProlificAssistant.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ProlificAssistant.entitlements; sourceTree = "<group>"; };
 		B563F277292EB27100038E0C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -76,14 +74,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B510A3482950C767002144E6 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				B563F26F292EB27000038E0C /* ProlificAssistantApp.swift */,
+				B563F273292EB27100038E0C /* Assets.xcassets */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		B510A3492950C77A002144E6 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				B510A34A2950C788002144E6 /* Client.swift */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
 		B563F263292EB27000038E0C = {
 			isa = PBXGroup;
 			children = (
+				B563F26E292EB27000038E0C /* ProlificAssistant */,
+				B563F28A292EB27100038E0C /* ProlificAssistantUITests */,
+				B563F280292EB27100038E0C /* ProlificAssistantTests */,
 				B563F29A292EB2AE00038E0C /* Makefile */,
 				B563F29B292EB2AE00038E0C /* README.md */,
-				B563F26E292EB27000038E0C /* ProlificAssistant */,
-				B563F280292EB27100038E0C /* ProlificAssistantTests */,
-				B563F28A292EB27100038E0C /* ProlificAssistantUITests */,
 				B563F26D292EB27000038E0C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,9 +116,8 @@
 		B563F26E292EB27000038E0C /* ProlificAssistant */ = {
 			isa = PBXGroup;
 			children = (
-				B563F26F292EB27000038E0C /* ProlificAssistantApp.swift */,
-				B563F271292EB27100038E0C /* ContentView.swift */,
-				B563F273292EB27100038E0C /* Assets.xcassets */,
+				B510A3492950C77A002144E6 /* Client */,
+				B510A3482950C767002144E6 /* UI */,
 				B563F275292EB27100038E0C /* ProlificAssistant.entitlements */,
 				B563F276292EB27100038E0C /* Preview Content */,
 			);
@@ -199,7 +213,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
-				LastUpgradeCheck = 1410;
+				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					B563F26B292EB27000038E0C = {
 						CreatedOnToolsVersion = 14.1;
@@ -239,7 +253,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B563F29D292EB2AE00038E0C /* README.md in Resources */,
 				B563F278292EB27100038E0C /* Preview Assets.xcassets in Resources */,
 				B563F274292EB27100038E0C /* Assets.xcassets in Resources */,
 			);
@@ -266,9 +279,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B563F29C292EB2AE00038E0C /* Makefile in Sources */,
-				B563F272292EB27100038E0C /* ContentView.swift in Sources */,
 				B563F270292EB27000038E0C /* ProlificAssistantApp.swift in Sources */,
+				B510A34B2950C788002144E6 /* Client.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +350,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -396,6 +409,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -420,8 +434,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ProlificAssistant/ProlificAssistant.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ProlificAssistant/Preview Content\"";
 				DEVELOPMENT_TEAM = 38J7HFHL7P;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -458,8 +474,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = ProlificAssistant/ProlificAssistant.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"ProlificAssistant/Preview Content\"";
 				DEVELOPMENT_TEAM = 38J7HFHL7P;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -497,6 +515,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 38J7HFHL7P;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
@@ -520,6 +539,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 38J7HFHL7P;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
@@ -542,6 +562,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 38J7HFHL7P;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
@@ -564,6 +585,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 38J7HFHL7P;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
