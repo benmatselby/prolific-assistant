@@ -14,6 +14,7 @@
 		B563F282292EB27100038E0C /* ProlificAssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563F281292EB27100038E0C /* ProlificAssistantTests.swift */; };
 		B563F28C292EB27100038E0C /* ProlificAssistantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563F28B292EB27100038E0C /* ProlificAssistantUITests.swift */; };
 		B563F28E292EB27100038E0C /* ProlificAssistantUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B563F28D292EB27100038E0C /* ProlificAssistantUITestsLaunchTests.swift */; };
+		B5FB7F9829511401000501EA /* Study.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5FB7F9729511401000501EA /* Study.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		B563F28D292EB27100038E0C /* ProlificAssistantUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProlificAssistantUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B563F29A292EB2AE00038E0C /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		B563F29B292EB2AE00038E0C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B5FB7F9729511401000501EA /* Study.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Study.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		B563F26E292EB27000038E0C /* ProlificAssistant */ = {
 			isa = PBXGroup;
 			children = (
+				B5FB7F96295113F5000501EA /* Models */,
 				B510A3492950C77A002144E6 /* Client */,
 				B510A3482950C767002144E6 /* UI */,
 				B563F275292EB27100038E0C /* ProlificAssistant.entitlements */,
@@ -147,6 +150,14 @@
 				B563F28D292EB27100038E0C /* ProlificAssistantUITestsLaunchTests.swift */,
 			);
 			path = ProlificAssistantUITests;
+			sourceTree = "<group>";
+		};
+		B5FB7F96295113F5000501EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B5FB7F9729511401000501EA /* Study.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5FB7F9829511401000501EA /* Study.swift in Sources */,
 				B563F270292EB27000038E0C /* ProlificAssistantApp.swift in Sources */,
 				B510A34B2950C788002144E6 /* Client.swift in Sources */,
 			);
