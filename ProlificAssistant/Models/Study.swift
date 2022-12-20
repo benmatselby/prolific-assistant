@@ -10,10 +10,17 @@ import Foundation
 /**
  * Responsible for representing a Study object from the JSON API results. Casing is important.
  */
-struct Study: Codable {
+struct Study: Codable, Hashable {
     var id: String
     var name: String
     var total_available_places: Int
+
+    /**
+     Get the application URL for the study.
+     */
+    func getAppURL() -> String {
+        return "https://app.prolific.co/researcher/workspaces/studies/"+self.id+"/"
+    }
 }
 
 /**

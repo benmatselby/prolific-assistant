@@ -19,7 +19,7 @@ class Client {
     /**
      The API Token to auth into Prolific.
      */
-    var apiToken: String = "Token xxx"
+    var apiToken: String = "Token xxxx"
 
     /**
      Responsible for getting studies from the API.
@@ -27,7 +27,7 @@ class Client {
     func getStudies() async -> Studies {
         var studies: Studies = Studies(results: [])
 
-        var request = URLRequest(url: URL(string: self.baseURL + "/v1/studies/")!)
+        var request = URLRequest(url: URL(string: self.baseURL + "/v1/studies/?draft=1")!)
             request.httpMethod = "GET"
             request.setValue(self.apiToken, forHTTPHeaderField: "Authorization")
 
